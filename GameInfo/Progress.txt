@@ -1,0 +1,45 @@
+# Information to update. Do NOT modifiy order, number of empty lines or profession names.
+
+# Base Exp: (seen when hovering over xp of basic recipes)
+300
+# Guild bonus percentage: (without % symbol)
+5
+# Is a crafting potion active? (True or False)
+False
+
+# -------------------------------------------------------------
+# Professions
+# Current Lvl
+# Accumulated Exp points
+
+Armorer
+35
+322
+
+Baker
+37
+1634
+
+Chef
+27
+2446
+
+Handyman
+29
+1905
+
+Jeweler
+35
+5201
+
+Leather Dealer
+28
+2350
+
+Tailor
+28
+302
+
+Weapon Master
+23
+3162
