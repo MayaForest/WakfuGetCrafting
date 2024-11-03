@@ -21,8 +21,8 @@ Baker
 1634
 
 Chef
-27
-2446
+31
+1741
 
 Handyman
 29
@@ -41,5 +41,5 @@ Tailor
 302
 
 Weapon Master
-23
+29
 3162

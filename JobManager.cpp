@@ -44,11 +44,11 @@ list<pair<int, string>> JobManager::getCrops(){
     for(Job job : jobsToLvlUp){
         list.push_back({
             (job.getNbrToCraft() * NBR_CROPS_PER_RECIPE[job.getTitle()]),
-            FIRST_RESSOURCES[HARVEST_INDEX_BY_JOB[job.getTitle()]][job.getNextRange() / 10]
+            FIRST_RESSOURCES[HARVEST_INDEX_BY_JOB[job.getTitle()]][(job.getNextRange() / 10) - 1]
         });
         list.push_back({
             (job.getNbrToCraft() * NBR_CROPS_PER_RECIPE[job.getTitle()]),
-            SECOND_RESSOURCES[HARVEST_INDEX_BY_JOB[job.getTitle()]][job.getNextRange() / 10]
+            SECOND_RESSOURCES[HARVEST_INDEX_BY_JOB[job.getTitle()]][(job.getNextRange() / 10) - 1]
         });
     }
     return list;
@@ -57,7 +57,7 @@ list<pair<int, string>> JobManager::getCrops(){
 list<pair<int, string>> JobManager::getRecipes(){
     list<pair<int, string>> list; // Qty and recipe
     for(Job job : jobsToLvlUp){
-        string recipe = RECIPE_ADJECTIVES[job.getNextRange() / 10];
+        string recipe = RECIPE_ADJECTIVES[(job.getNextRange() / 10) - 1];
         recipe += " ";
         recipe += RECIPE_NAMES[job.getTitle()];
 
